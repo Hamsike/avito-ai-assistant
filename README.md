@@ -55,7 +55,7 @@ cd avito-ai-assistant
 npm run install-all
 
 # Настройка порта для сервера
-ccd server
+cd server
 set PORT=8080   # Windows
 # export PORT=8080   # Linux/macOS
 
