@@ -104,8 +104,8 @@ export const AdForm: React.FC = () => {
   const [isSaving, setIsSaving] = useState(false)
 
   const isInitialLoad = useRef(true)
-  const autoSaveTimer = useRef<NodeJS.Timeout>()
-  const autoSaveInterval = useRef<NodeJS.Timeout>()
+  const autoSaveTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
+const autoSaveInterval = useRef<ReturnType<typeof setTimeout>>(undefined)
   const { token } = theme.useToken()
   const { modal } = App.useApp()
 
@@ -565,7 +565,6 @@ export const AdForm: React.FC = () => {
       name="price" 
       noStyle
       getValueFromEvent={(value) => {
-        // Обработка значения из InputNumber
         if (value === undefined || value === null) return 0
         return typeof value === 'number' ? value : Number(value)
       }}

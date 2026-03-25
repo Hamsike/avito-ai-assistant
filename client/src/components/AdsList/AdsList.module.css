@@ -27,7 +27,6 @@
   min-height: 100vh;
 }
 
-/* Пагинация - выравнивание по левому краю */
 .paginationContainer {
   display: flex;
   justify-content: flex-start;
@@ -36,7 +35,6 @@
   border-top: 1px solid #f0f0f0;
 }
 
-/* Grid layout */
 .gridRow {
   margin: 0;
 }
@@ -103,7 +101,6 @@
   margin: 0;
 }
 
-/* Sidebar filters */
 .sidebarFilters {
   width: 100%;
 }
@@ -129,18 +126,15 @@
   margin-bottom: 24px;
 }
 
-/* Action buttons */
 .actionButtons {
   display: flex;
   gap: 8px;
 }
 
-/* Layout row */
 .layoutRow {
   margin: 0;
 }
 
-/* Sidebar col */
 .sidebarCol {
   flex: 0 0 25%;
   max-width: 25%;
@@ -156,12 +150,10 @@
   max-width: 100%;
 }
 
-/* Empty state */
 .emptyState {
   padding: 48px 0;
 }
 
-/* Адаптивность */
 @media (max-width: 992px) {
   .sidebarCol {
     flex: 0 0 33.33%;
@@ -244,7 +236,6 @@
   }
 }
 
-/* Анимации */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -260,7 +251,6 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Стили для карточек */
 .card {
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -270,13 +260,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Стили для кнопки сброса */
 .resetButton {
   padding: 0;
   height: auto;
 }
 
-/* Стили для поиска */
 .searchInput {
   width: 100%;
 }

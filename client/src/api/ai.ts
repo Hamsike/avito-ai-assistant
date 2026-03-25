@@ -213,7 +213,6 @@ export const aiApi = {
         return response.data.choices[0].message.content.trim()
       }
     } catch (error) {
-      console.error('AI generation error:', error)
       throw new Error('Не удалось сгенерировать описание')
     }
   },
@@ -277,7 +276,6 @@ export const aiApi = {
         recommendation: difference > 0 ? 'выше' : difference < 0 ? 'ниже' : 'равна',
       }
     } catch (error) {
-      console.error('AI price suggestion error:', error)
       throw new Error('Не удалось определить рыночную цену')
     }
   },

@@ -21,11 +21,6 @@ apiClient.interceptors.response.use(
     return response
   },
   (error) => {
-    if (error.response?.status === 404) {
-      console.debug('Resource not found:', error.config?.url)
-    } else if (error.response?.status === 500) {
-      console.error('Server error:', error.config?.url)
-    }
     return Promise.reject(error)
   }
 )

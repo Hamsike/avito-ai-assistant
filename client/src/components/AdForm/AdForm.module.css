@@ -1,12 +1,8 @@
-/* AdForm.module.css */
-
-/* Контейнер страницы */
 .container {
   padding: 24px;
   min-height: 100vh;
 }
 
-/* Карточка формы */
 .card {
   width: 100%;
   max-width: 800px;
@@ -14,12 +10,10 @@
   border-radius: 8px;
 }
 
-/* Контент */
 .content {
   width: 100%;
 }
 
-/* Шапка */
 .header {
   display: flex;
   justify-content: space-between;
@@ -48,23 +42,19 @@
   color: var(--ant-color-text-secondary);
 }
 
-/* Разделитель */
 .divider {
   margin: 16px 0;
 }
 
-/* Форма */
 .form {
   width: 100%;
 }
 
-/* Поля формы */
 .formItem {
   margin-bottom: 24px;
   width: 100%;
 }
 
-/* Обертка для цены с кнопкой */
 .priceWrapper {
   display: flex;
   gap: 12px;
@@ -82,7 +72,6 @@
   min-width: 140px;
 }
 
-/* Кнопка описания */
 .descriptionButtonWrapper {
   display: flex;
   justify-content: flex-start;
@@ -95,7 +84,6 @@
   min-width: 200px;
 }
 
-/* Контейнер загрузки */
 .loadingContainer {
   display: flex;
   justify-content: center;
@@ -103,7 +91,6 @@
   min-height: 100vh;
 }
 
-/* Кнопки действий */
 .actionButtons {
   display: flex;
   gap: 16px;
@@ -114,7 +101,6 @@
   min-width: 120px;
 }
 
-/* Модальное окно для цены */
 .priceModalCurrentPrice {
   display: flex;
   justify-content: space-between;
@@ -143,7 +129,6 @@
   transition: all 0.3s ease;
 }
 
-/* Стили для разных типов рекомендаций */
 .priceModalRecommendationHigher {
   background: var(--ant-color-success-bg);
   border: 1px solid var(--ant-color-success-border);
@@ -237,7 +222,6 @@
   line-height: 1.5;
 }
 
-/* Модальное окно для описания */
 .descriptionModalContent {
   max-height: 400px;
   overflow: auto;
@@ -251,7 +235,6 @@
   color: var(--ant-color-text);
 }
 
-/* Анимации */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -267,7 +250,6 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .container {
     padding: 16px;
