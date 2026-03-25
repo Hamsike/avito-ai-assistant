@@ -1,0 +1,286 @@
+.container {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.headerCount {
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+.searchCard {
+  margin-bottom: 24px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Пагинация - выравнивание по левому краю */
+.paginationContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Grid layout */
+.gridRow {
+  margin: 0;
+}
+
+.gridCol {
+  margin-bottom: 0;
+}
+
+.cardCover {
+  object-fit: cover;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cardPrice {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.cardTag {
+  margin-top: 8px;
+}
+
+.listContainer {
+  width: 100%;
+}
+
+.listItemCard {
+  width: 100%;
+  cursor: pointer;
+}
+
+.listItemImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.listItemTitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.listItemTag {
+  margin-top: 4px;
+}
+
+.listItemBadge {
+  margin-left: 8px;
+}
+
+.listItemPrice {
+  margin: 0;
+}
+
+/* Sidebar filters */
+.sidebarFilters {
+  width: 100%;
+}
+
+.sidebarCard {
+  height: fit-content;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filterCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filterSection {
+  margin-bottom: 24px;
+}
+
+/* Action buttons */
+.actionButtons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Layout row */
+.layoutRow {
+  margin: 0;
+}
+
+/* Sidebar col */
+.sidebarCol {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.contentCol {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.contentColFull {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Empty state */
+.emptyState {
+  padding: 48px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .sidebarCol {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  
+  .contentCol {
+    flex: 0 0 66.67%;
+    max-width: 66.67%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .sidebarCol {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .contentCol {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .contentColFull {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .headerTitle {
+    font-size: 20px;
+  }
+  
+  .headerCount {
+    font-size: 14px;
+  }
+  
+  .paginationContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 12px;
+  }
+  
+  .header {
+    margin-bottom: 16px;
+  }
+  
+  .searchCard {
+    margin-bottom: 16px;
+  }
+  
+  .actionButtons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .cardTitle {
+    font-size: 14px;
+  }
+  
+  .listItemTitle {
+    font-size: 14px;
+  }
+  
+  .listItemImage {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .paginationContainer {
+    justify-content: center;
+  }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gridCol, .listItemCard {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Стили для карточек */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для кнопки сброса */
+.resetButton {
+  padding: 0;
+  height: auto;
+}
+
+/* Стили для поиска */
+.searchInput {
+  width: 100%;
+}
+
+.sortSelect {
+  width: 100%;
+}

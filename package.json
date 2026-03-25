@@ -1,0 +1,14 @@
+{
+  "name": "avito-ai-assistant",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run ollama\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "ollama": "ollama serve",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

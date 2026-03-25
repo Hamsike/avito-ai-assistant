@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition: 
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.ant-btn,
+.ant-input,
+.ant-select-selector,
+.ant-picker,
+.ant-card {
+  transition: 
+    all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.ant-modal,
+.ant-modal-mask {
+  transition: none !important;
+}
+
+.ant-table,
+.ant-list,
+.ant-spin {
+  transition: none;
+}
+
+*::after,
+*::before {
+  transition: none;
+}

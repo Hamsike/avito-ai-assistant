@@ -1,0 +1,206 @@
+/* AdDetails.module.css */
+.container {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.navigation {
+  margin-bottom: 24px;
+}
+
+/* Заголовок и цена */
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.titleRow h2:first-child {
+  margin: 0;
+  flex: 1;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.titleRow h2:last-child {
+  margin: 0;
+  white-space: nowrap;
+  margin-left: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Кнопка и даты - теперь в колонку */
+.actionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Контейнер для дат в колонку */
+.dateColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.dateText {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.dateTextEdited {
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.category {
+  margin-bottom: 24px;
+}
+
+.category .ant-typography {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.contentRow {
+  margin-bottom: 32px;
+}
+
+.image {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.revisionAlert {
+  padding: 16px 20px;
+  border: 1px solid #ffd666;
+  border-radius: 8px;
+  background: #fff7e6;
+  width: 100%;
+}
+
+.revisionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.revisionIcon {
+  color: #faad14;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.revisionTitle {
+  font-size: 16px;
+  color: #ad6800;
+  font-weight: 600;
+  margin: 0;
+}
+
+.revisionText {
+  display: block;
+  margin-bottom: 8px;
+  color: #ad8b00;
+}
+
+.revisionList {
+  margin-top: 0;
+}
+
+.revisionListItem {
+  padding: 4px 0 4px 24px !important;
+  border: none !important;
+}
+
+.revisionField {
+  color: #ad8b00;
+}
+
+.sectionTitle {
+  margin-bottom: 16px !important;
+  font-weight: 600 !important;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.errorContainer {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.paramsTable {
+  border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .titleRow h2:first-child,
+  .titleRow h2:last-child {
+    font-size: 20px;
+  }
+  
+  .revisionAlert {
+    padding: 12px 16px;
+  }
+  
+  .revisionTitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleRow {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .titleRow h2:last-child {
+    margin-left: 0;
+    white-space: normal;
+  }
+  
+  .actionRow {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .actionRow button {
+    width: 100%;
+  }
+  
+  .dateColumn {
+    align-items: flex-start;
+  }
+}
